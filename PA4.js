@@ -1,24 +1,31 @@
+document.getElementById("numb").addEventListener("keypress", colorFunc);
+
+function colorFunc(){
+    document.getElementById("numb").style.backgroundColor = "lightgreen";
+};
+
 function fizzBuzz(){
-const userInput = prompt("Please enter a number to count to:");
-    for(let i = 1; i < userInput+1; i++){
-        if(i % 3 == 0){
-            if(i % 5 == 0){
-                document.write("FizzBuzz, ");
+    var x = document.getElementById("numb").value;
+    x = parseInt(x);
+    var nums = [];
+
+    for(let i = 0; i < x; i++){
+        if((i+1) % 3 == 0){
+            if((i+1) % 5 == 0){
+                nums[i] = "FizzBuzz";
             }
             else{
-                document.write("Fizz, ");
+                nums[i] = "Fizz";
             }
         } 
-        else if(i % 5 == 0){
-            if(i % 3 != 0){
-                document.write("Buzz, ");
+        else if((i+1) % 5 == 0){
+            if((i+1) % 3 != 0){
+                nums[i] = "Buzz";
             }
         } 
         else{
-            document.write(i + ", ");
+            nums[i] = i+1;
         }
     }
-}
-
-let result = fizzBuzz();
-document.getElementById("demo").innerHTML = result;
+    document.getElementById("demo").innerHTML = nums;
+};

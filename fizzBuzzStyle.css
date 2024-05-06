@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #CECBF6;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #005E75;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #005E75;
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #001475;
+}
