@@ -5,9 +5,9 @@ function colorFunc(){
 };
 
 function fizzBuzz(){
-    var x = document.getElementById("numb").value;
+    let x = document.getElementById("numb").value;
     x = parseInt(x);
-    var nums = [];
+    let nums = [];
 
     for(let i = 0; i < x; i++){
         if((i+1) % 3 == 0){
